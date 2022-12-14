@@ -7,10 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Responsive Bootstrap 4 Admin &amp; Dashboard Template">
 	<meta name="author" content="Bootlab">
-    <link rel="manifest" href="/manifest.json" />
+	<link rel="manifest" href="/manifest.json" />
 	<div id="moderncss"></div>
 
-	<title>Ecommerce</title>
+	<title>12 Furniture</title>
 	<link rel="stylesheet" href="sweetalert2.min.css">
 	<script>
 		if (location.pathname.startsWith('/admin')) {
@@ -21,8 +21,8 @@
 			newSS.rel = 'stylesheet';
 			newSS.href = 'data:text/css,' + escape(styles);
 			document.getElementsByTagName("head")[0].appendChild(newSS);
-
-			var styles1 = "@import url('http://192.163.31.11/frontend/css/style.css');";
+			alert(window.location.origin)
+			var styles1 = "@import url(" + window.location.origin + "/frontend/css/style.css);";
 			var styleSS = document.createElement('link');
 			styleSS.rel = 'stylesheet';
 			styleSS.href = 'data:text/css,' + escape(styles1);
@@ -30,7 +30,7 @@
 		}
 	</script>
 	<!-- <link rel="manifest" href="manifest.json"> -->
-    <link rel="manifest" href="/manifest.json" />
+	<link rel="manifest" href="/manifest.json" />
 
 
 </head>

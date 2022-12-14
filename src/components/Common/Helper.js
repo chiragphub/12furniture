@@ -62,12 +62,10 @@ export function getSettingValuebyName(name) {
     let settingNameValueData = localStorage.getItem("settingNameValueData");
     settingNameValueData = JSON.parse(settingNameValueData);
     let valueOfName = '';
-    if (settingNameValueData.length > 0) {
+    if (Array.isArray(settingNameValueData) && settingNameValueData?.length > 0) {
         let valObj = settingNameValueData.find(o => o.name == name)
-        console.log('valObj:', valObj)
-        if(valObj != undefined){
+        if (valObj != undefined) {
             valueOfName = valObj?.value
-            console.log('valueOfName:', valueOfName)
         }
     }
     return valueOfName;
