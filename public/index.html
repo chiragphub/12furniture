@@ -21,7 +21,6 @@
 			newSS.rel = 'stylesheet';
 			newSS.href = 'data:text/css,' + escape(styles);
 			document.getElementsByTagName("head")[0].appendChild(newSS);
-			alert(window.location.origin)
 			var styles1 = "@import url(" + window.location.origin + "/frontend/css/style.css);";
 			var styleSS = document.createElement('link');
 			styleSS.rel = 'stylesheet';
