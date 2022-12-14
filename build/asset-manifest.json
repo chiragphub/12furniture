@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a5edabbf.css",
+    "main.js": "/static/js/main.45123dfb.js",
+    "static/js/27.5c8880e1.chunk.js": "/static/js/27.5c8880e1.chunk.js",
+    "static/media/banner5.jpg": "/static/media/banner5.5d23a4c5dd74111dc9be.jpg",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.6878d55e3615ccf40c38.svg",
+    "static/media/brd4.jpg": "/static/media/brd4.7c5df9d63aff8625302e.jpg",
+    "static/media/ElegantIcons.svg": "/static/media/ElegantIcons.44385f164a99385eb34f.svg",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/ElegantIcons.woff": "/static/media/ElegantIcons.941bf29b415d3a9b7099.woff",
+    "static/media/ElegantIcons.eot": "/static/media/ElegantIcons.78ba4ad1289e5a66ca11.eot",
+    "static/media/ElegantIcons.ttf": "/static/media/ElegantIcons.4555dd9ce623f8fd6d72.ttf",
+    "static/media/product-2.jpg": "/static/media/product-2.3ac1f1f488df075ce75a.jpg",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.a5edabbf.css",
+    "static/js/main.45123dfb.js"
+  ]
+}
