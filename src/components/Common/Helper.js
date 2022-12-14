@@ -23,7 +23,7 @@ if (mode == "production") {
         settingHeaderLogoImg: 'http://192.163.31.11:8080/setting/headerLogo.jpg',
         settingFooterLogoImg: 'http://192.163.31.11:8080/setting/footerLogo.jpg',
         noImgPath: 'http://192.163.31.11:8080/noImg.png',
-        BASE_URL: "http://192.163.31.11"
+        BASE_URL: "https://12furniture.netlify.app"
     }
 }
 export function ImageExist(url) {
