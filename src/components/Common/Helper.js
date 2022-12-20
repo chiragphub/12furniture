@@ -1,5 +1,5 @@
 
-const mode = "dev";
+const mode = "production";
 //production 
 
 let helper = {
@@ -16,13 +16,13 @@ let helper = {
 if (mode == "production") {
 
     helper = {
-        ApiUrl: 'http://192.163.31.11:8080/api',
-        ProductImgPath: 'http://192.163.31.11:8080/product/resize/',
-        mainProductImgPath: 'http://192.163.31.11:8080/product/',
-        settingPath: 'http://192.163.31.11:8080/setting/',
-        settingHeaderLogoImg: 'http://192.163.31.11:8080/setting/headerLogo.jpg',
-        settingFooterLogoImg: 'http://192.163.31.11:8080/setting/footerLogo.jpg',
-        noImgPath: 'http://192.163.31.11:8080/noImg.png',
+        ApiUrl: 'https://one2furniture-api.onrender.com/api',
+        ProductImgPath: 'https://one2furniture-api.onrender.com/product/resize/',
+        mainProductImgPath: 'https://one2furniture-api.onrender.com/product/',
+        settingPath: 'https://one2furniture-api.onrender.com/setting/',
+        settingHeaderLogoImg: 'https://one2furniture-api.onrender.com/setting/headerLogo.jpg',
+        settingFooterLogoImg: 'https://one2furniture-api.onrender.com/setting/footerLogo.jpg',
+        noImgPath: 'https://one2furniture-api.onrender.com/noImg.png',
         BASE_URL: "https://12furniture.netlify.app"
     }
 }

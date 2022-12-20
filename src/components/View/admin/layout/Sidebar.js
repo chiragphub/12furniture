@@ -42,7 +42,7 @@ const Sidebar = (props) => {
                 <svg>
                     <use xlinkHref="#ion-ios-pulse-strong"></use>
                 </svg>
-                ECOMMERCE
+                12 Furniture
             </Link>
             <div className="sidebar-content">
                 <div className="sidebar-user">
