@@ -73,7 +73,7 @@ const Header = () => {
                                     </ul>
                                 </div>
                             </div> */}
-                            <div className="col-lg-6 col-md-6 col-12">
+                            <div className="col-lg-12 col-md-12 col-12">
                                 <div className="header__top__right">
                                     <div className="header__top__right__social">
                                         <a href={getSettingValuebyName("Facebook") != '' ? getSettingValuebyName("Facebook") : '#'}><i className="fa fa-facebook"></i></a>
