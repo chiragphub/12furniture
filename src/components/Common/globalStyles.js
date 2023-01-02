@@ -336,7 +336,7 @@ if (window.location.href.indexOf("admin") > -1 || 1==1) {
    .header__top__right__language {
 	   position: relative;
 	   display: inline-block;
-	   margin-right: 40px;
+	   margin-right: 1px;
 	   cursor: pointer;
    }
    
