@@ -65,14 +65,14 @@ const Header = () => {
                 <div className="header__top_1">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-6 col-md-6 col-12">
+                            {/* <div className="col-lg-6 col-md-6 col-12">
                                 <div className="header__top__left">
                                     <ul>
                                         <li><i className="fa fa-envelope"></i>{!UserAuthToken ? "hello User" : " Welcome " + userData.email}</li>
-                                        {/* <li>Free Shipping for all Order of $99</li> */}
+                                        <li>Free Shipping for all Order of $99</li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="col-lg-6 col-md-6 col-12">
                                 <div className="header__top__right">
                                     <div className="header__top__right__social">
