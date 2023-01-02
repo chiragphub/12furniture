@@ -94,8 +94,8 @@ const Hero = (props) => {
                             location.pathname == "/" || location.pathname == "/home" ?
                                 <div className="hero__item set-bg" style={myst}>
                                     <div className="hero__text">
-                                        <span className='text-white'>Flower FRESH</span>
-                                        <h2>Flowers <br />100% Fresh</h2>
+                                        <span className='text-white'>Best Offers</span>
+                                        <h2>UP TO <br />50% OFF</h2>
                                         <p className='text-white'>Free Pickup and Delivery Available</p>
                                         <Link to="/shop" className="primary-btn">SHOP NOW</Link>
                                     </div>
