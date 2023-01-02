@@ -1,4 +1,4 @@
-import { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import logo from '../../../../asset/frontend/img/logo.png'
 //import '../../../../asset/frontend/css/bootstrap.min.css'
 //import '../../../../asset/frontend/css/style.css'
@@ -13,6 +13,8 @@ import settingApi from "../../../Api/admin/setting";
 import ForntLoder from "../../../Common/ForntLoder";
 import { getSettingValuebyName } from '../../../Common/Helper';
 
+import Drawer from 'react-modern-drawer'
+import 'react-modern-drawer/dist/index.css'
 
 //import GlobalStyle from '../../../Common/globalStyles';
 
@@ -26,6 +28,11 @@ const Header = () => {
     const user = useContext(UserContext);
     const navigate = useNavigate();
     var adminAuthToken = localStorage.getItem("adminAuthToken");
+
+    const [isOpen, setIsOpen] = React.useState(false)
+    const toggleDrawer = () => {
+        setIsOpen((prevState) => !prevState)
+    }
 
 
 
@@ -117,6 +124,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-3">
@@ -140,6 +148,8 @@ const Header = () => {
                                 </li> */}
                                     {/* <li><a href="./blog.html">Blog</a></li> */}
                                     <li className={location.pathname == '/contact' ? 'active' : ''}><Link to={"/contact"}>Contact</Link></li>
+                                    <li><Link to="/cart">Cart <i className="fa fa-shopping-bag"></i><span>{user.cartCount}</span></Link></li>
+
                                 </ul>
                             </nav>
                         </div>
@@ -147,16 +157,36 @@ const Header = () => {
                             <div className="header__cart">
                                 <ul>
                                     {/* <li><a href="#"><i className="fa fa-heart"></i> <span>1</span></a></li> */}
-                                    <li><Link to="/cart"><i className="fa fa-shopping-bag"></i> <span>{user.cartCount}</span></Link></li>
+                                    {/* <li><Link to="/cart"><i className="fa fa-shopping-bag"></i> <span>{user.cartCount}</span></Link></li> */}
                                 </ul>
                                 {/* <div className="header__cart__price">item: <span>$150.00</span></div> */}
                             </div>
                         </div>
                     </div>
-                    <div className="humberger__open">
+                    <div className="humberger__open" onClick={toggleDrawer}>
                         <i className="fa fa-bars"></i>
                     </div>
                 </div>
+
+                <Drawer
+                    open={isOpen}
+                    onClose={toggleDrawer}
+                    direction='left'
+                    className='bla bla bla'
+                >
+                    <ul class="list-group">
+                        {/* <nav className="header__menu"> */}
+                        <li className={location.pathname == '/' || location.pathname == '/home' ? 'active list-group-item' : 'list-group-item'}><Link to={"/home"}><i class="fa fa-home" aria-hidden="true"></i> Home</Link></li>
+                        <li className={location.pathname == '/' || location.pathname == '/cart' ? 'active list-group-item' : 'list-group-item'}><Link to="/cart"><i className="fa fa-shopping-bag"></i> Cart </Link></li>
+                        {/* <li><Link to="/cart"><i className="fa fa-shopping-bag"></i> Cart <span>{user.cartCount}</span></Link></li> */}
+                        <li className={location.pathname == '/shop' ? 'active list-group-item' : 'list-group-item'}><Link to="/shop"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Shop</Link></li>
+                        <li className={location.pathname == '/contact' ? 'active list-group-item' : 'list-group-item'}><Link to={"/contact"}><i class="fa fa-phone" aria-hidden="true"></i> Contact</Link></li>
+
+                        {/* </nav> */}
+                    </ul>
+                </Drawer>
+
+
             </header>
         </>
     )

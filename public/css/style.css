@@ -3495,3 +3495,13 @@ ol {
     overflow: scroll;
     overflow-x: hidden;
 }
+
+
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff !important;
+    background-color: #9fbcc1 !important;
+    border-color: #9fbcc1 !important;
+}
+

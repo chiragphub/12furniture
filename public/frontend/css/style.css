@@ -2992,12 +2992,12 @@ ol {
 	.humberger__open {
 		display: block;
 		font-size: 22px;
-		color: #1c1c1c;
+		color: #9fbcc1;
 		height: 35px;
 		width: 35px;
 		line-height: 33px;
 		text-align: center;
-		border: 1px solid #1c1c1c;
+		border: 1px solid #9fbcc1;
 		cursor: pointer;
 		position: absolute;
 		right: 15px;
@@ -3250,12 +3250,12 @@ ol {
 	.humberger__open {
 		display: block;
 		font-size: 22px;
-		color: #1c1c1c;
+		color: #9fbcc1;
 		height: 35px;
 		width: 35px;
 		line-height: 33px;
 		text-align: center;
-		border: 1px solid #1c1c1c;
+		border: 2px solid #9fbcc1;
 		cursor: pointer;
 		position: absolute;
 		right: 15px;
@@ -3657,4 +3657,16 @@ color: #ffffff !important;
 .card-p-text {
 	color: rgba(255,255,255,.8);
 	-webkit-text-security: disc !important; 
+}
+
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff !important;
+    background-color: #9fbcc1 !important;
+    border-color: #9fbcc1 !important;
+}
+
+.list-group-item > a{
+	color: black;
 }
