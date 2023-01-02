@@ -177,7 +177,7 @@ const Header = () => {
                     <ul class="list-group">
                         {/* <nav className="header__menu"> */}
                         <li className={location.pathname == '/' || location.pathname == '/home' ? 'active list-group-item' : 'list-group-item'}><Link to={"/home"}><i class="fa fa-home" aria-hidden="true"></i> Home</Link></li>
-                        <li className={location.pathname == '/' || location.pathname == '/cart' ? 'active list-group-item' : 'list-group-item'}><Link to="/cart"><i className="fa fa-shopping-bag"></i> Cart </Link></li>
+                        <li className={location.pathname == '/cart' ? 'active list-group-item' : 'list-group-item'}><Link to="/cart"><i className="fa fa-shopping-bag"></i> Cart </Link></li>
                         {/* <li><Link to="/cart"><i className="fa fa-shopping-bag"></i> Cart <span>{user.cartCount}</span></Link></li> */}
                         <li className={location.pathname == '/shop' ? 'active list-group-item' : 'list-group-item'}><Link to="/shop"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Shop</Link></li>
                         <li className={location.pathname == '/contact' ? 'active list-group-item' : 'list-group-item'}><Link to={"/contact"}><i class="fa fa-phone" aria-hidden="true"></i> Contact</Link></li>
