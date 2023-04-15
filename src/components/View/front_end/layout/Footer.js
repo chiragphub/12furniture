@@ -32,7 +32,7 @@ const Footer = () => {
                             <ul>
                                 <li><a href="#">Who We Are</a></li>
                                 <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Projects</a></li>
+                                <li><a href="/admin">Staff Login</a></li>
                                 <li><a href="#">Contact</a></li>
                                 <li><a href="#">Innovation</a></li>
                                 <li><a href="#">Testimonials</a></li>
@@ -60,7 +60,7 @@ const Footer = () => {
                     <div className="col-lg-12">
                         <div className="footer__copyright">
                             <div className="footer__copyright__text"><p>
-                                Copyright &copy; 2022 All rights reserved.
+                                Copyright &copy; 2023 All rights reserved.
                             </p></div>
                             <div className="footer__copyright__payment"><img src="img/payment-item.png" alt="" /></div>
                         </div>
