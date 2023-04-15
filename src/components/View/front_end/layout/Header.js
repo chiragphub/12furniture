@@ -8,10 +8,9 @@ import '../../../../asset/frontend/css/elegant-icons.css'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { UserContext } from '../../../../App'
 import cartApi from '../../../Api/frontend/cart'
-import { uniqueDeviceId } from '../../../Common/Helper'
 import settingApi from "../../../Api/admin/setting";
 import ForntLoder from "../../../Common/ForntLoder";
-import { getSettingValuebyName } from '../../../Common/Helper';
+import helper,{ getSettingValuebyName,uniqueDeviceId } from '../../../Common/Helper';
 
 import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
@@ -130,7 +129,7 @@ const Header = () => {
                         <div className="col-lg-3">
                             <div className="header__logo">
                                 {/* <a onClick={() => { window.location.reload() }}><img src={logo} alt="Logo" /></a> */}
-                                <Link to={'/'}><img src={logo} alt="Logo" /></Link>
+                                <Link to={'/'}><img src={helper.settingHeaderLogoImg} alt="Logo" /></Link>
                             </div>
                         </div>
                         <div className="col-lg-6">

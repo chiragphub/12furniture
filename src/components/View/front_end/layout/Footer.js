@@ -1,5 +1,5 @@
 import logo from '../../../../asset/frontend/img/logo.png'
-import { getSettingValuebyName } from '../../../Common/Helper';
+import helper,{ getSettingValuebyName } from '../../../Common/Helper';
 import { Link } from 'react-router-dom'
 
 
@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="col-lg-3 col-md-6 col-sm-6">
                         <div className="footer__about">
                             <div className="footer__about__logo">
-                                <a href="./index.html"><img src={logo} alt="" /></a>
+                                <a href="./index.html"><img src={helper.settingFooterLogoImg} alt="Footer Logo Img" /></a>
                             </div>
                             <ul>
                                 <li>Address: {getSettingValuebyName("infoAddress") != '' ? getSettingValuebyName("infoAddress") : '60-49 Road 11378 New York'}</li>
