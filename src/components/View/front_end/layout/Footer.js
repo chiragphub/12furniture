@@ -1,5 +1,7 @@
 import logo from '../../../../asset/frontend/img/logo.png'
 import { getSettingValuebyName } from '../../../Common/Helper';
+import { Link } from 'react-router-dom'
+
 
 const Footer = () => {
     return (
